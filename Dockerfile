@@ -10,7 +10,7 @@ RUN npm cache clean
 RUN npm install n -g
 RUN n stable
 RUN ln -sf /usr/local/bin/node /usr/bin/node
-RUN npm install -g npm@3
+RUN npm update -g npm
 RUN pip install awscli
 RUN curl https://glide.sh/get | sh
 
