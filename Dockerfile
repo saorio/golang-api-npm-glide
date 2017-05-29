@@ -1,7 +1,7 @@
 FROM golang:1.8.3
 
 RUN apt-get update
-RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup | bash -
 RUN apt-get install -y netcat \
                        python \
                        python-pip \
